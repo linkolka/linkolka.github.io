@@ -1,5 +1,5 @@
 body {
-    height: 5372px;
+    min-height: 5372px;
     margin: 0 ;
     font-family: Montserrat;
     font-style: normal;
@@ -39,7 +39,7 @@ body {
  header {
     
     
-    height: 715px;
+    min-height: 715px;
     padding-top: 38px;
     background: url("img/bg_header.png") no-repeat;
     background-size: cover;
@@ -127,7 +127,7 @@ header p {
 }
 /* О НАС */
 .about-us-section{
-    height: 576px;
+    min-height: 576px;
     text-align: center;
 
 }
@@ -153,7 +153,7 @@ header p {
     row-gap: 81px;
     justify-content: center;
     text-align: center;
-    height: 273px;
+    min-height: 273px;
     background: #8D7370;
 }
 .achievements-section div {
@@ -175,7 +175,7 @@ p.number {
 }
 /* НАШИ РАБОТЫ */
 .works-section {
-    height: 1099px;
+    min-height: 1099px;
     text-align: center;
 }
 .works {
@@ -201,7 +201,7 @@ p.number {
 
 /* КОМАНДА */
 .team-section {
-    height: 998px;
+    min-height: 998px;
     text-align: center;
 }
 /* АДАПТИВНАЯ ВЕРСТКА!!!ПОМЕНЯТЬ НА ФЛЕКС!!! */
@@ -255,7 +255,7 @@ p.number {
 
 /* ОТЗЫВЫ */
 .feedback-section {
-    height: 658px;
+    min-height: 658px;
     margin: 65px auto;
 }
 
@@ -265,7 +265,7 @@ p.number {
 
 /* ОСТАВИТЬ ЗАЯВКУ */
 .application-section {
-    height: 624px;
+    min-height: 624px;
 }
 
 input[type="submit"] {
