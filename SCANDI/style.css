@@ -1,5 +1,5 @@
 body {
-    height: 5372px;
+    min-height: 5372px;
     margin: 0 ;
     font-family: Montserrat;
     font-style: normal;
@@ -8,15 +8,16 @@ body {
     color: #533738;
     font-size: 18px;
     line-height: 30px;
-    /* padding-right: 20px;
-    padding-left: 20px; */
+
+     /*padding-right: auto;
+    padding-left: auto; */
   }
-  ul, h1, h1, p, img {
-      margin:0;
+  ul, h1, h2, p, img {
+     margin:0;
   }
   a {
-      text-decoration: none;
-      color: #533738;
+    text-decoration: none;
+    color: #533738;
   }
   h1, h2 {
     color: #533738;
@@ -35,26 +36,24 @@ body {
     
     text-transform: uppercase;
   }
+
   /* ШАПКА */
  header {
-    
-    
-    height: 715px;
+    /*margin-right: auto;
+    margin-left: auto;*/
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    min-height: 715px;
     padding-top: 38px;
     background: url("img/bg_header.jpg") no-repeat;
     background-size: cover;
     padding: 36px 100px 0 98px;
 }
 .menu {
-    /* display: grid;
-    grid-template-columns: 90px 1fr 145px;
     
-    align-items: center;
-    width: 1201.28px;
-    height: 25px;
-    margin: 0 100px; */
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .logo {
@@ -70,12 +69,20 @@ body {
 }
 .menu-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 35px;
     font-size: 16px;
     line-height: 20px;
     flex-grow: 1;
+    
+}
+.menu-list a {
+	padding: 5px;
+}
+.menu-list div {
+	
 }
 .menu-list a:hover {
     text-transform: uppercase;
@@ -87,14 +94,14 @@ body {
 }
 
 .phone-number {
-    margin-left: 35px;   
+       
     font-size: 16px;
     line-height: 20px; 
     margin-top: auto;
     margin-bottom: auto;
 }
 .slogan {
-    width: 534px;
+    max-width: 534px;
     text-align: left;
     margin-left: 86px;
     margin-top: 91px;
@@ -127,7 +134,9 @@ header p {
 }
 /* О НАС */
 .about-us-section{
-    height: 576px;
+    min-height: 576px;
+    margin-top: 65px;
+
     text-align: center;
 
 }
@@ -137,13 +146,18 @@ header p {
     column-gap: 64px;
     row-gap: 20px;
     justify-content: center;
+    margin-top: 40px;
+
 }
 .about-us p {
-    width: 528px;
+    max-width: 528px;
     text-align: left;
     padding-bottom: 30px;
 }
-
+.about-us-image {
+	line-height: 0;
+	/*margin-bottom: 21px;*/
+}
 /* ДОСТИЖЕНИЯ */
 
 .achievements-section {
@@ -153,12 +167,14 @@ header p {
     row-gap: 81px;
     justify-content: center;
     text-align: center;
-    height: 273px;
+    min-height: 273px;
     background: #8D7370;
+
 }
 .achievements-section div {
     margin-top: auto;
     margin-bottom: auto;
+    padding: 10px;
     
 }
 p.text {
@@ -175,8 +191,15 @@ p.number {
 }
 /* НАШИ РАБОТЫ */
 .works-section {
-    height: 1099px;
+    min-height: 1099px;
+    max-width: 1200px;
+    margin: 65px auto;
     text-align: center;
+
+}
+.works-section h2 {
+	text-align: left;
+	
 }
 .works {
     display: flex; 
@@ -184,13 +207,17 @@ p.number {
     column-gap: 20px;  
     row-gap: 30px;
     justify-content: center;
+    margin: 40px auto;
+}
+.work {
+	line-height: 0;
 }
 .else span {
     
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
-    margin-top: 40px;   
+    
    
 }
 .else span:hover {
@@ -201,32 +228,47 @@ p.number {
 
 /* КОМАНДА */
 .team-section {
-    height: 998px;
+
+    min-height: 998px;
     text-align: center;
+    background-color: #E2C4BA;
+    padding-top: 50px;
+    
 }
-/* АДАПТИВНАЯ ВЕРСТКА!!!ПОМЕНЯТЬ НА ФЛЕКС!!! */
+.team-box {
+	/*margin-top: 50px;*/
+	/*margin: 50px auto 0;*/
+}
 .team {
-    display: grid;
-    grid-template-columns: 320px 320px 320px;
+    
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 38px;
     row-gap: 10px;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    margin: 40px auto 0;
+    
 }
-.team-text {
+
+.member {
     width: 320px;
     text-align: left;
 }
+.work-scheme-box {
+	max-width: 1200px;
+	margin: 35px auto 80px;
+	
+}
 .work-scheme {
     display: flex;
-    margin-right:auto;
-    margin-left:auto;
+    flex-wrap: wrap;
+    margin: 40px auto 0;
     column-gap: 20px;
     row-gap: 40px;
     justify-content:center;
+    padding-bottom: 10px;
 }
-.first {
+.stage {
     width: 285px;
     display: flex;
     flex-direction: column;
@@ -249,14 +291,65 @@ p.number {
     /* 
     margin-bottom: 0; */
 }
-.scheme {
-
-}
 
 /* ОТЗЫВЫ */
 .feedback-section {
-    height: 658px;
+    min-height: 658px;
     margin: 65px auto;
+    text-align: center;
+}
+.feedback-section-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+
+}
+.arrow-left {
+	margin-right: 29px;
+	width: 72px;
+	height: 72px;
+}
+.arrow-right {
+	margin-left: 29px;
+	width: 72px;
+	height: 72px;
+}
+article.feedback {
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+}
+.flex-item {
+	/*border: 2px solid black;*/
+}
+
+.feedback-text {
+	max-width: 407px;
+	text-align: left;
+	margin-right: 20px;
+}
+.feedback-text p:first-of-type,
+.feedback-text p:nth-of-type(2)
+ {
+	padding-bottom: 30px;
+
+}
+.feedback-text p:last-of-type {
+	padding-top: 19px;
+}
+.feedback-photo {
+	display: flex;
+	flex-direction: column;
+	line-height: 0;
+
+}
+.feedback-photo img:first-of-type {
+	margin-bottom: 24px;
 }
 
 
@@ -265,20 +358,44 @@ p.number {
 
 /* ОСТАВИТЬ ЗАЯВКУ */
 .application-section {
-    height: 624px;
+	display: flex;
+	flex-wrap: wrap;
+	gap:20px;
+	justify-content: center;
+	padding-left: 82px;
+    min-height: 624px;
+    background-color: #8D7370;
+    color: #ffffff;
+}
+.application {
+	max-width: 508px;
+	margin-top: 50px;
+}
+.application h2 {
+	margin-bottom: 24px;
+	color: #ffffff;
+}
+.application p {
+	margin-bottom: 44px;
+	opacity: 0.6;
 }
 
 input[type="submit"] {
-    width: 309.14px;
+    max-width: 309.14px;
     height: 74px;
     background: #CC8B86;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: #533738;
+
     border: none;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
+input[type="submit"]:hover {
+	box-shadow: 0 0 12px 0 #533738 /* #E2C4BA;*/
+}
+
 input[type="text"], 
 input[type="tel"] {
     font-size: 18px;
@@ -287,9 +404,9 @@ input[type="tel"] {
     color: #F6EDE9;
     font-family: Montserrat;
     border: none;
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid white ;
     margin-bottom: 30px;
-    width: 508px;
+    /*max-width: 500px;*/
 }
 input {outline:none;}
 form input:focus {
@@ -298,19 +415,24 @@ form input:focus {
     box-shadow: inset 0 0 12px 0 #CC8B86;
     
 }
+.map {
+line-height: 0;
+max-width: 590px;
+}
 
 
 /* ПОДВАЛ */
 .footer-section {
     display: flex;
-    position: absolute;
-    left: 100px;
-    top: 5305px;
-    width: 1200px;
-    height: 30px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 30px;
+    margin: 37px auto;
+}
+.phone {
+	margin-right: 42px;	
 }
 .address {
-    margin-left: 42px;
+   
     margin-right: auto;
 }
