@@ -381,6 +381,7 @@ p.number {
 .feedback-section-flex {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
 	margin-top: 40px;
 	/*margin-left: auto;
