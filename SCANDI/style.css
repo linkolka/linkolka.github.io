@@ -12,14 +12,14 @@ body {
      /*padding-right: auto;
     padding-left: auto; */
   }
-  ul, h1, h2, p, img {
+  ul, h1, h2, h3, p, img {
      margin:0;
   }
   a {
     text-decoration: none;
     color: #533738;
   }
-  h1, h2 {
+  h1, h2, h3 {
     color: #533738;
     font-style: normal;
     font-weight: normal;
@@ -45,20 +45,21 @@ body {
     flex-wrap: wrap;
     justify-content: center;*/
     min-height: 715px;
-    padding-top: 38px;
     background: url("img/bg_header.jpg") no-repeat;
     background-size: cover;
     padding: 36px 100px 0 98px;
 }
 .menu {
-    
+    /* position:fixed; */
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    gap: 10px;
     justify-content: space-between;
 }
 .logo {
     display: flex;
-    margin-right: 89px;
+    margin-right: 80px;
+    
     font-size: 16px;
     line-height: 20px;
    
@@ -69,7 +70,9 @@ body {
 }
 .menu-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 20px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 35px;
@@ -82,10 +85,10 @@ body {
 	padding: 5px;
 }
 .menu-list div {
-	
+	flex-grow: 1;
 }
 .menu-list a:hover {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); */
     background-color: #E2C4BA;
     box-shadow:  0 0 5px 5px #E2C4BA;
@@ -211,7 +214,84 @@ p.number {
 }
 .work {
 	line-height: 0;
+    height:451px;
+    position: relative;
+    background-size: cover;
+    
 }
+.work1 {
+    background-image: url("img/work1.png");
+    width: 488px;
+   
+}
+.work2 {
+    background-image: url("img/work2.png");
+    width: 692px;
+    
+}
+.work3 {
+    background-image: url("img/work3.png");
+    width: 692px;
+    
+   
+}
+.work4 {
+    background-image: url("img/work4.png");
+    width: 488px;
+    
+}
+.work-hover,
+.work-hover-wide {
+    position: absolute;
+    top:0;
+    left: 0;
+    visibility: hidden;
+    color: #ffffff;
+    background-color: rgba(100, 72, 69, 0.8);
+    /* transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out; */
+    /* transition-delay: */
+}
+
+.work-hover {
+    height: 451px;
+    width: 488px;
+}
+.work-hover-wide {
+    height: 451px;
+    width: 692px;
+}
+.work1:hover .work-hover,
+.work2:hover .work-hover-wide,
+.work3:hover .work-hover-wide,
+.work4:hover .work-hover {
+    visibility: visible;
+    /* transition-property: */
+    /* transition-duration:
+    transition-timing-function:
+    transition-delay: */
+}
+.work h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #ffffff;
+    
+    margin: 86px auto 37px;
+    
+}
+.work p {
+    max-width: 418px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    padding: 10px;
+}
+
+
 .else span {
     
     font-weight: 500;
@@ -220,8 +300,8 @@ p.number {
     
    
 }
-.else span:hover {
-    font-size: 35px;
+.else a:hover {
+    padding-left: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -311,6 +391,17 @@ p.number {
 	margin-right: 29px;
 	width: 72px;
 	height: 72px;
+    
+}
+.arrow:hover {
+    opacity: 0.5;
+    transform: translateX(10px);
+}
+.arrow-left:hover {
+    transform: translateX(-10px);
+}
+.arrow-right:hover {
+    transform: translateX(10px);
 }
 .arrow-right {
 	margin-left: 29px;
@@ -352,10 +443,6 @@ article.feedback {
 	margin-bottom: 24px;
 }
 
-
-
-
-
 /* ОСТАВИТЬ ЗАЯВКУ */
 .application-section {
 	display: flex;
@@ -381,7 +468,7 @@ article.feedback {
 }
 
 input[type="submit"] {
-    max-width: 309.14px;
+    width: 309px;
     height: 74px;
     background: #CC8B86;
     font-weight: 500;
@@ -406,15 +493,23 @@ input[type="tel"] {
     border: none;
     border-bottom: 2px solid white ;
     margin-bottom: 30px;
-    /*max-width: 500px;*/
+    width: 500px;
 }
 input {outline:none;}
 form input:focus {
     border-radius: 7px;
-    border: 1px solid #CC8B86;
-    box-shadow: inset 0 0 12px 0 #CC8B86;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 6px 0 #ffffff;
+    /* border: 1px solid #CC8B86;
+    box-shadow: inset 0 0 12px 0 #CC8B86; */
     
 }
+::-webkit-input-placeholder {color:#F6EDE9;}
+::-moz-placeholder          {color:#F6EDE9;;}/* Firefox 19+ */
+:-moz-placeholder           {color:#F6EDE9;;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#F6EDE9;;} 
+    
+
 .map {
 line-height: 0;
 max-width: 590px;
