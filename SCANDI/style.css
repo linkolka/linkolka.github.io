@@ -382,6 +382,7 @@ p.number {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	row-gap: 20px;
 	align-items: center;
 	margin-top: 40px;
 	/*margin-left: auto;
