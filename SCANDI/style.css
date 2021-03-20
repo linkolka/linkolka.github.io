@@ -52,7 +52,7 @@ body {
 .menu {
     /* position:fixed; */
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
 }
@@ -146,9 +146,9 @@ header p {
 .about-us {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 64px;
     row-gap: 20px;
-    justify-content: center;
     margin-top: 40px;
 
 }
@@ -159,7 +159,11 @@ header p {
 }
 .about-us-image {
 	line-height: 0;
-	/*margin-bottom: 21px;*/
+	max-width: 445px;
+}
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
 }
 /* ДОСТИЖЕНИЯ */
 
@@ -211,6 +215,7 @@ p.number {
     row-gap: 30px;
     justify-content: center;
     margin: 40px auto;
+   
 }
 .work {
 	line-height: 0;
@@ -240,37 +245,27 @@ p.number {
     width: 488px;
     
 }
+
 .work-hover,
 .work-hover-wide {
     position: absolute;
     top:0;
     left: 0;
+    height: 451px;
     visibility: hidden;
+    width: 100%;
     color: #ffffff;
     background-color: rgba(100, 72, 69, 0.8);
-    /* transition-property: background-color;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out; */
-    /* transition-delay: */
+    /* background-image: url("img/bg.png"); */
+    /* background-size: cover; */
 }
 
-.work-hover {
-    height: 451px;
-    width: 488px;
-}
-.work-hover-wide {
-    height: 451px;
-    width: 692px;
-}
 .work1:hover .work-hover,
 .work2:hover .work-hover-wide,
 .work3:hover .work-hover-wide,
 .work4:hover .work-hover {
     visibility: visible;
-    /* transition-property: */
-    /* transition-duration:
-    transition-timing-function:
-    transition-delay: */
+    
 }
 .work h3 {
     font-weight: 500;
@@ -289,6 +284,7 @@ p.number {
     line-height: 30px;
     text-align: left;
     padding: 10px;
+    
 }
 
 
@@ -331,9 +327,15 @@ p.number {
 }
 
 .member {
-    width: 320px;
+    max-width: 320px;
     text-align: left;
 }
+.member img {
+    max-width: 100%;
+    height: auto;
+}
+/* ПОД ВОПРОСОМ ОФОРМЛЕНИЕ КАРТИНОК */
+
 .work-scheme-box {
 	max-width: 1200px;
 	margin: 35px auto 80px;
@@ -380,36 +382,36 @@ p.number {
 }
 .feedback-section-flex {
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
-	flex-wrap: wrap;
-	row-gap: 20px;
+    row-gap: 20px;
 	align-items: center;
 	margin-top: 40px;
 	/*margin-left: auto;
 	margin-right: auto;*/
 
 }
-.arrow-left {
-	margin-right: 29px;
-	width: 72px;
+.arrow {
+    width: 72px;
 	height: 72px;
-    
 }
 .arrow:hover {
-    opacity: 0.5;
-    transform: translateX(10px);
+    opacity: 0.5;   
 }
+.arrow-left {
+	margin-right: 29px;	
+}
+
 .arrow-left:hover {
     transform: translateX(-10px);
+}
+.arrow-right {
+	margin-left: 29px;	
 }
 .arrow-right:hover {
     transform: translateX(10px);
 }
-.arrow-right {
-	margin-left: 29px;
-	width: 72px;
-	height: 72px;
-}
+
 article.feedback {
 	display: flex;
 	flex-wrap: wrap;
@@ -436,10 +438,14 @@ article.feedback {
 	padding-top: 19px;
 }
 .feedback-photo {
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
+    max-width: 407px;
 	line-height: 0;
-
+}
+.feedback-photo img {
+    max-width: 100%;
+    height: auto;
 }
 .feedback-photo img:first-of-type {
 	margin-bottom: 24px;
@@ -515,6 +521,10 @@ form input:focus {
 .map {
 line-height: 0;
 max-width: 590px;
+}
+iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 
