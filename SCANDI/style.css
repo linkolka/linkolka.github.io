@@ -522,11 +522,6 @@ form input:focus {
 line-height: 0;
 max-width: 590px;
 }
-iframe {
-    max-width: 100%;
-    height: auto;
-}
-
 
 /* ПОДВАЛ */
 .footer-section {
