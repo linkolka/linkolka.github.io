@@ -63,8 +63,8 @@
 	input[type="tel"] {
 		max-width: 220px;
 	}
-	.map {
-		
-		max-width: 200px;
+	iframe {
+		max-width: 100%;
+		height: auto;
 	}
 }
