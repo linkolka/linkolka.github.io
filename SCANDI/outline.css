@@ -1,3 +1,18 @@
+/* section {
+	border: 1px solid black;
+}
+div {
+	border: 1px solid brown;
+}
+h1, h2, h3 {
+	border: 1px solid red;
+}
+p {
+	border: 1px solid green;
+}
+img {
+	border: 1px solid blue;
+} */
 @media screen and (max-width: 600px) {
 	header {
 		padding: 36px 20px 0;
@@ -6,10 +21,7 @@
 		margin-left: 20px;
 	}
 	
-	h1 {
-		font-size: 35px;
-    	line-height: 42px;
-	}
+	
 	h2 {
 		font-size: 30px;
 		line-height: 40px;
@@ -24,25 +36,20 @@
 		font-size: 15px;
     	line-height: 20px;
 	}
-	.menu-list {
-		display: none;
-	}
+	
 	.work {
 		width: 100%;
 	}
 	p {
 		padding: 10px;
-		font-size: 14px;
+		font-size: 16px;
     	line-height: 25px;
 	}
 	.else span {
 		font-size: 25px;
     	line-height: 35px;
 	}
-	.arrow {
-		margin-left: 0;
-		margin-right: 0;
-	}
+	
 	.application-section {
 		padding-left: 10px;
 		
@@ -63,8 +70,63 @@
 	input[type="tel"] {
 		max-width: 220px;
 	}
+	/* .map {
+		
+		max-width: 200px;
+	} */
 	iframe {
 		max-width: 100%;
 		height: auto;
 	}
 }
+@media screen and (max-width: 1050px) {
+	.arrow-mini {
+		display: flex;
+		column-gap: 30px;
+		justify-content: center;
+		/* margin-left: 0;
+		margin-right: 0; */
+	}
+	.arrow-left, .arrow-right {
+		display: none;
+	}
+	
+}
+@media screen and (max-width: 1256px) {
+	.menu-list {
+		display: none;
+	}
+	.menu-list-mini {
+		display: flex;
+	}
+	
+}
+@media screen and (max-width: 1200px) {
+	.works-section h2 {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1110px) {
+	.achievements-section {
+		column-gap: 150px;
+	}
+}
+@media screen and (max-width: 935px) {
+	p.text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.achievements-section {
+		row-gap: 10px;
+	}
+}
+@media screen and (max-width: 742px) {
+	h1 {
+		font-size: 35px;
+		line-height: 42px;
+	}
+}
+
+
+
+
