@@ -280,7 +280,8 @@ p.number {
     top:0;
     left: 0;
     height: 451px;
-    visibility: hidden;
+    opacity: 0;
+/*     visibility: hidden; */
     width: 100%;
     color: #ffffff;
     background-color: rgba(100, 72, 69, 0.8);
@@ -291,7 +292,8 @@ p.number {
 .work2:hover .work-hover-wide,
 .work3:hover .work-hover-wide,
 .work4:hover .work-hover {
-    visibility: visible;
+/*     visibility: visible; */
+     opacity: 1;
     
 }
 .work h3 {
