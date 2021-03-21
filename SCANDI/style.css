@@ -421,12 +421,14 @@ p.number {
 }
 .arrow {
     width: 72px;
-	height: 72px;
+    height: 72px;
 }
 .arrow:hover {
     opacity: 0.5;   
 }
-
+.arrow-left-mini {
+    margin-right: 30px;
+}
 
 .arrow-left:hover, .arrow-left-mini:hover {
     transform: translateX(-10px);
@@ -578,13 +580,13 @@ max-width: 590px;
 	}
 	.work h3 {
 		font-size: 20px;
-    	line-height: 27px;
+    		line-height: 27px;
 		margin: 60px auto auto;
 		
 	}
 	.work p {
 		font-size: 15px;
-    	line-height: 20px;
+    		line-height: 20px;
 	}
 	
 	.work {
@@ -593,11 +595,11 @@ max-width: 590px;
 	p {
 		padding: 10px;
 		font-size: 16px;
-    	line-height: 25px;
+    		line-height: 25px;
 	}
 	.else span {
 		font-size: 25px;
-    	line-height: 35px;
+    		line-height: 35px;
 	}
 	
 	.application-section {
@@ -632,10 +634,8 @@ max-width: 590px;
 @media screen and (max-width: 1050px) {
 	.arrow-mini {
 		display: flex;
-		column-gap: 30px;
 		justify-content: center;
-		/* margin-left: 0;
-		margin-right: 0; */
+		margin-top: 20px;
 	}
 	.arrow-left, .arrow-right {
 		display: none;
